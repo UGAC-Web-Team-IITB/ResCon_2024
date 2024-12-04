@@ -13,6 +13,18 @@ main {
     width: 100%; /* Ensure it spans the full width */
     height: 100vh;
 }
+.m1{
+  position: relative;
+  right:100px;
+}
+.m2{
+  position: relative;
+  right:70px;
+}
+.m3{
+  position: relative;
+  right:70px;
+}
 
 .logo {
     flex-direction: row;
