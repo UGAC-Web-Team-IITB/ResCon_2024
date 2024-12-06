@@ -33,3 +33,10 @@ document.querySelectorAll('.accordion-header').forEach(button => {
         }
     });
 });
+
+function toggleNav() {
+    const navMenu = document.getElementById("nav-menu");
+    navMenu.classList.toggle("open");
+    const navFlex = document.getElementsByClassName("navbar");
+    navFlex.classList.toggle("vertical");
+}

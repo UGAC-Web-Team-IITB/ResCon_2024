@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ResCon</title>
   <link rel="stylesheet" href="style.css">
-  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
 </head>
 <body>
   <header class="navbar">
@@ -14,7 +14,10 @@
       <img class="logo-img" src="assets/iitb logo.png" alt="Logo">
       <img class="logo-img" src="assets/enpower logo.png" alt="Logo">
     </div>
-    <nav>
+    <div class="hamburger" onclick="toggleNav()">
+      &#9776;  
+  </div>
+    <nav id="nav-menu">
       <ul class="nav-links">
         <li><a href="#index.html/#home">HOME</a></li>
         <li><a href="about.html">ABOUT THE EVENT</a></li>
@@ -34,13 +37,6 @@
       <button class="register-btn">REGISTER NOW!</button>
     </section>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <div class="accordions">
 <div class="new-accordion-item">
     <div class="new-header" onclick="toggleFAQSection(this)">
@@ -146,7 +142,7 @@
       
       <section class="map-content" id="mapSection">
         <div class="map">
-          <img style="height: 500px; width:900px; margin:30px;" src="assets/map_ltpcsa.jpg" alt="map" class="map_img">
+          <img src="assets/map_ltpcsa.jpg" alt="map" class="map-img">
           <div class="event-organizer">
             <h1>Event Organizer</h1>
             <ul>

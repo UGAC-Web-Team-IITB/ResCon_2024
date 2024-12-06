@@ -15,7 +15,10 @@
       <img class="logo-img" src="assets/iitb logo.png" alt="Logo">
       <img class="logo-img" src="assets/enpower logo.png" alt="Logo">
     </div>
-    <nav>
+    <div class="hamburger" onclick="toggleNav()">
+      &#9776;  
+  </div>
+    <nav id="nav-menu">
       <ul class="nav-links">
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT THE EVENT</a></li>
@@ -42,16 +45,16 @@
         <!-- Middle Column for Text -->
         <div class="about-content">
 
-          <p style="text-align: justify; font-size: x-large;">
+          <p style="text-align: justify;">
             ResCon is the Annual Research Conclave for undergraduates at IIT Bombay, organised by EnPower—the research
             promotion wing of the institute in collaboration with IRCC at TechConnect, Techfest 2024.
           </p>
-          <p style="text-align: justify; font-size: x-large;">
+          <p style="text-align: justify;">
             The conclave aims to stimulate engineering curiosity in UG students and create a platform for UG researchers
             to display their research work, offering a variety of exciting competitions, workshops, keynote speeches,
             and much more.
           </p>
-          <p style="text-align: justify; font-size: x-large;">
+          <p style="text-align: justify;">
             At ResCon, the brightest minds converge to propel research forward. The event revolves around three themes:
             Soch, Vichar, and Achar, each fostering unique insights and collaboration.
           </p>
@@ -82,24 +85,6 @@
       </div>
     </div>
 
-    <div class="accordion">
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleContent('vichar', this)">
-          <span class="accordion-title"><span class="highlight">■</span> Vichar</span>
-          <span class="accordion-icon">+</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion">
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleContent('achar', this)">
-          <span class="accordion-title"><span class="highlight">■</span> Achar</span>
-          <span class="accordion-icon">+</span>
-        </div>
-      </div>
-    </div>
-
     <section class="soch" id="soch">
       <h3> SOCH</h3>
       <div class="soch-section">
@@ -112,10 +97,10 @@
 
         <div class="soch-content">
 
-          <p style="font-size: x-large;">Soch features insights from leading researchers and visionary thinkers. These
+          <p>Soch features insights from leading researchers and visionary thinkers. These
             sessions are designed to broaden perspectives, offering participants a fresh outlook on research and its
             possibilities.</p>
-          <p style="font-size: x-large;">Details regarding this year’s discussions would be announced soon.</p>
+          <p>Details regarding this year’s discussions would be announced soon.</p>
         </div>
 
         <div class="soch-images-right">
@@ -124,9 +109,14 @@
       </div>
     </section>
 
-
-
-
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleContent('vichar', this)">
+          <span class="accordion-title"><span class="highlight">■</span> Vichar</span>
+          <span class="accordion-icon">+</span>
+        </div>
+      </div>
+    </div>
 
     <section class="soch" id="vichar">
       <h3> VICHAR</h3>
@@ -138,10 +128,10 @@
 
         <div class="soch-content">
 
-          <p style="font-size: x-large;">Vichar connects thought leaders from diverse fields to discuss critical topics
+          <p>Vichar connects thought leaders from diverse fields to discuss critical topics
             like “Industry and Academia” and “AI in Research.” Interactive workshops on “Ethics in Research” and
             “Entrepreneurship” deepen participants’ understanding.</p>
-          <p style="font-size: x-large;">The topics for the panel discussions and registrations for the workshop under
+          <p>The topics for the panel discussions and registrations for the workshop under
             ResCon 2024 will be released soon. </p>
         </div>
 
@@ -150,6 +140,23 @@
         </div>
       </div>
     </section>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleContent('achar', this)">
+          <span class="accordion-title"><span class="highlight">■</span> Achar</span>
+          <span class="accordion-icon">+</span>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+
+
+    
 
     <section class="soch" id="achar">
       <h3> ACHAR</h3>
@@ -161,7 +168,7 @@
 
         <div class="soch-content">
 
-          <p style="font-size: x-large;">Achar, the highlight of ResCon, is a competitive platform for participants to
+          <p>Achar, the highlight of ResCon, is a competitive platform for participants to
             present their research through compelling posters and abstracts. Events include a 3-Minute Flash Talk,
             Poster Presentation, and a 15-minute Research Presentation, where students present their work in an engaging
             format to peers and experts. </p>
