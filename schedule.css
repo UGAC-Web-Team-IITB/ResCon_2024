@@ -226,6 +226,9 @@ table th {
     background: #e6e6e6;
     color: #7b1919;
 }
+table td{
+  font-size: 1.4rem;
+}
 
 .contact {
     margin-top: 20px;
@@ -236,7 +239,7 @@ table th {
 
 .contact div {
     font-family: "Young Serif", serif;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color:#ffffff;
     padding: 10px;
     border-radius: 5px;
@@ -244,6 +247,8 @@ table th {
   
   /* Footer Styles */
   footer {
+    margin-top:150px;
+    bottom: 1;
     font-size: 1rem;
     text-align: center;
     padding: 1.5rem;
