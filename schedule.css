@@ -189,8 +189,8 @@
 .heading {
     font-family: "Young Serif", serif;
     text-align: center;
-    font-size: 4rem;
-    margin-left:20%;
+    font-size: 2rem;
+    margin-left:25%;
     margin-bottom: 20px;
 }
 
@@ -206,7 +206,7 @@ text-align: left;
 
 .header .event-info span {
 display: block;
-font-size: 1.5rem;
+font-size: 1rem;
 font-weight: bold;
 color: #ccc;
 }
@@ -223,11 +223,12 @@ table th, table td {
 }
 
 table th {
+  font-family: 1.2rem;
     background: #e6e6e6;
     color: #7b1919;
 }
 table td{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .contact {
@@ -354,12 +355,12 @@ table td{
   @media (max-width: 550px) {
     
   .container {
-    max-width: 400px;
+    max-width: 350px;
     font-size: 1rem;
 }
 .contact div {
     font-family: "Young Serif", serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color:#ffffff;
     padding: 10px;
     border-radius: 5px;
@@ -367,7 +368,7 @@ table td{
   .heading {
     font-family: "Young Serif", serif;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.2em;
     margin-left:10%;
     margin-bottom: 2px;
 }
@@ -389,5 +390,13 @@ font-size: 0.8rem;
 color: #ccc;
 }
 
+table th {
+  font-family: 0.8rem;
+    background: #e6e6e6;
+    color: #7b1919;
+}
+table td{
+  font-size: 0.7rem;
+}
   
 }
