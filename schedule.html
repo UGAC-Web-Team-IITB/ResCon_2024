@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Schedule</title>
     <link rel="stylesheet" href="schedule.css">
-
-    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tangerine:wght@400;700&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="navbar">
@@ -14,28 +15,116 @@
           <img class="logo-img" src="assets/iitb logo.png" alt="Logo">
           <img class="logo-img" src="assets/enpower logo.png" alt="Logo">
         </div>
-        <div class="hamburger" onclick="toggleNav()">
-          &#9776;  
-      </div>
-        <nav id="nav-menu">
+
+        <div class="hamburger-menu">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </div>
+        
+        <nav>
           <ul class="nav-links">
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT THE EVENT</a></li>
             <li><a href="schedule.html">SCHEDULE</a></li>
             <li><a href="team.html">TEAM</a></li>
-            <li><a href="#register">REGISTER NOW</a></li>
+            <li><a href="index.html">REGISTER NOW</a></li>
           </ul>
         </nav>
     
       </header>
-    <main>
-        <section class="content">
-            <h1>SCHEDULE</h1>
-            <p>WILL BE UPDATED SOON</p>
-        </section>
-    </main>
+
+      <div class="container">
+        <div class="header">
+          <div class="event-info">
+              <span>📅 17th December, 2024</span>
+              <span>📍 IIT Bombay</span>
+          </div>
+          <div class="heading">Schedule</div>
+      </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Venue</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Orientation of the Achar Poster Presentation Competition</td>
+                    <td>LT-PCSA</td>
+                    <td>7:30 AM</td>
+                </tr>
+                <tr>
+                    <td>Achar Poster Presentation Round</td>
+                    <td>VMCC Foyer</td>
+                    <td>8:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Keynote Speech by the Chief Guest: Defence R&D</td>
+                    <td>LT-PCSA</td>
+                    <td>10:15 AM</td>
+                </tr>
+                <tr>
+                    <td>Workshop + Competition (Lock It In Challenge)</td>
+                    <td>LT-PCSA</td>
+                    <td>11:30 AM</td>
+                </tr>
+                <tr>
+                    <td>Panel Discussion</td>
+                    <td>VMCC</td>
+                    <td>2:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Achar Finals</td>
+                    <td>LT-PCSA</td>
+                    <td>3:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Research Entrepreneurship & Commercialisation & Award Distribution Ceremony</td>
+                    <td>LT-PCSA</td>
+                    <td>5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Open Networking</td>
+                    <td>LT-PCSA</td>
+                    <td>6:00 PM</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="contact">
+            <div>Dev (8218705411)</div>
+            <div>Nilay (7666946224)</div>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2024 ResCon. All rights reserved.</p>
       </footer>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        // Select the hamburger menu and navigation links
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+    
+        // Toggle mobile menu
+        hamburgerMenu.addEventListener('click', () => {
+            // Toggle 'active' class on navigation
+            navLinks.classList.toggle('active');
+            
+            // Optional: Animate hamburger menu icon
+            hamburgerMenu.classList.toggle('active');
+        });
+    
+        // Close menu when a nav link is clicked (optional, but improves UX)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburgerMenu.classList.remove('active');
+            });
+        });
+    });
+      </script>
 </body>
 </html>
